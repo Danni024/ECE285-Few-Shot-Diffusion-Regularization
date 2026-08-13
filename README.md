@@ -5,7 +5,7 @@
 Fine-tuning Stable Diffusion v1.5 on just 15 images with LoRA, and studying how to prevent the
 mode collapse / memorization that extreme few-shot fine-tuning is prone to.
 
-![Dataset](Dataset grid.jpg)
+![Dataset](Dataset grid.png)
 
 ## Problem
 
@@ -37,7 +37,7 @@ only → LoRA + Latent MixUp → LoRA + Latent MixUp + Diversity Loss (proposed)
 | LoRA + Latent MixUp | 110.94 | 0.9700 | 0.8000 |
 | **LoRA + MixUp + Diversity Loss (proposed)** | **110.88** | 0.9700 | **0.8000** |
 
-![Generated samples](Generated_samples_grid.jpg)
+![Generated samples](Generated samples grid.png)
 
 **Plain LoRA fine-tuning memorizes rather than generalizes**: it hits perfect Precision (1.0) but
 Recall collapses to 0.4667 — a textbook sign of mode collapse, confirmed visually by highly
