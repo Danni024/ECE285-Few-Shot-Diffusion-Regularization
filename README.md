@@ -40,7 +40,7 @@ only → LoRA + Latent MixUp → LoRA + Latent MixUp + Diversity Loss (proposed)
 | **LoRA + MixUp + Diversity Loss (proposed)** | **110.88** | 0.9700 | **0.8000** |
 
 <p align="center">
-  <img src="generated_samples_grid.png" alt="Generated samples" width="50%">
+  <img src="generated_samples_grid.png" alt="Generated samples" width="70%">
 </p>
 
 **Plain LoRA fine-tuning memorizes rather than generalizes**: it hits perfect Precision (1.0) but
@@ -52,11 +52,11 @@ trading away precision — evidence that most of the diversity gain comes from t
 augmentation, with the loss-side penalty acting as a fine-grained cleanup on top.
 
 <p align="center">
-  <img src="training_loss_curve.png" alt="Training loss" width="50%">
+  <img src="training_loss_curve.png" alt="Training loss" width="60%">
 </p>
 
 <p align="center">
-  <img src="baseline_vs_proposed_loss.png" alt="Baseline vs. proposed loss" width="50%">
+  <img src="baseline_vs_proposed_loss.png" alt="Baseline vs. proposed loss" width="60%">
 </p>
 
 The proposed method's training loss also decays more smoothly than plain LoRA, which shows sharp,
