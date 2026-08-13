@@ -64,8 +64,10 @@ erratic spikes characteristic of overfitting to a 15-image set.
 
 ## Repo contents
 
-- `few_shot_diffusion_lora.ipynb` — full pipeline: LoRA + MixUp + Diversity Loss training loop for
-  all four ablation groups, qualitative sample-grid generation, and FID/Precision/Recall evaluation.
+- `train.py` — LoRA + Latent MixUp + Diversity Loss training loop; run once per ablation group
+  (`--exp_type baseline_sd|baseline_lora|baseline_mixup|proposed`).
+- `generate_samples.py` — loads each group's checkpoint and generates a qualitative comparison grid.
+- `evaluate.py` — batch-generates samples per group and computes FID / Precision / Recall.
 
 ---
 Final project for ECE 285: Deep Generative Models, UC San Diego.
