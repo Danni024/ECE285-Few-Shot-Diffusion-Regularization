@@ -5,7 +5,7 @@
 Fine-tuning Stable Diffusion v1.5 on just 15 images with LoRA, and studying how to prevent the
 mode collapse / memorization that extreme few-shot fine-tuning is prone to.
 
-![Dataset](dataset_grid.jpg)
+![Dataset](Dataset grid.jpg)
 
 ## Problem
 
